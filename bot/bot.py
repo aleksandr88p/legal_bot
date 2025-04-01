@@ -1,11 +1,12 @@
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher
-from dotenv import load_dotenv
-import os
-from handlers import start, help
+from aiogram.fsm.storage.memory import MemoryStorage
+from config import Config
+from handlers import start, help, query
+from aiogram.utils.chat_action import ChatActionMiddleware
 
-# Настраиваем логирование
+# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -13,27 +14,42 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-load_dotenv()
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+# Инициализация бота и диспетчера
+bot = Bot(token=Config.BOT_TOKEN)
+storage = MemoryStorage()
+dp = Dispatcher(storage=storage)
 
-bot = Bot(token=TOKEN)
-dp = Dispatcher()
+async def on_startup(bot: Bot):
+    """Действия при запуске бота"""
+    if Config.ADMIN_ID:
+        await bot.send_message(Config.ADMIN_ID, "¡Bot iniciado!")
+    logger.info("=== Bot iniciado ===")
+    logger.info(f"Nombre del bot: @{(await bot.get_me()).username}")
 
-# Регистрируем обработчики
-start.register_handlers(dp)
-help.register_handlers(dp)
+async def on_shutdown(bot: Bot):
+    """Действия при остановке бота"""
+    if Config.ADMIN_ID:
+        await bot.send_message(Config.ADMIN_ID, "Bot detenido!")
+    logger.info("=== Bot detenido ===")
 
 async def main():
-    logger.info("=== Legal Bot запущен ===")
-    logger.info(f"Имя бота: @{(await bot.get_me()).username}")
-    logger.info("Обработчики команд зарегистрированы")
-    logger.info("Бот готов к работе!")
+    # Подключение middleware
+    dp.message.middleware(ChatActionMiddleware())
+    
+    # Регистрация обработчиков
+    start.register_handlers(dp)
+    help.register_handlers(dp)
+    query.register_handlers(dp)
+    
+    # Регистрация действий при запуске и остановке
+    dp.startup.register(on_startup)
+    dp.shutdown.register(on_shutdown)
+    
+    # Запуск бота
     try:
         await dp.start_polling(bot)
-    except Exception as e:
-        logger.error(f"Произошла ошибка: {e}")
     finally:
-        logger.info("=== Legal Bot остановлен ===")
+        await bot.session.close()
 
 if __name__ == "__main__":
     asyncio.run(main())
