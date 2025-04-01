@@ -1,0 +1,12 @@
+# venv
+venv/
+
+# pycache
+__pycache__/
+
+# env
+.env
+
+# logs
+logs/
+
