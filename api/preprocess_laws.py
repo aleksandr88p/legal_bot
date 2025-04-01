@@ -3,81 +3,92 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-def clean_text_with_metadata(text):
-    # Убираем титульные страницы и оглавление (всё до "TÍTULO PRELIMINAR")
-    start_index = text.find("TÍTULO PRELIMINAR")
-    if start_index != -1:
-        text = text[start_index:]
-
-    # Убираем повторяющиеся заголовки
-    text = re.sub(r'^(Código Civil|LA NORMA AL DIA|MINISTERIO DE JUSTICIA|Agencia Estatal Boletin Oficial del Estado.*)$', '', text, flags=re.MULTILINE)
-
-    # Убираем номера страниц и "$1$"
-    text = re.sub(r'^\d+$', '', text, flags=re.MULTILINE)
-    text = re.sub(r'^\$1\$$', '', text, flags=re.MULTILINE)
-
-    # Убираем сноски (но можно сохранить их отдельно, если нужно)
-    text = re.sub(r'^\d+\s*(Redactado|Apartado derogado|Título redactado).*$', '', text, flags=re.MULTILINE)
-
-    # Убираем лишние пробелы и пустые строки
-    text = re.sub(r'^\s+', '', text, flags=re.MULTILINE)
-    text = re.sub(r'\n\s*\n', '\n', text)
-    text = text.strip()
-
-    # Разбиваем на чанки и извлекаем метаданные
-    lines = text.split('\n')
-    chunks_with_metadata = []
-    current_title = ""
-    current_article = ""
-
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-
-        # Проверяем, является ли строка заголовком раздела (например, "TÍTULO PRELIMINAR")
-        if re.match(r'^(TÍTULO|CAPÍTULO|SEC\.)', line):
-            current_title = line
-            continue
-
-        # Проверяем, является ли строка началом статьи (например, "1.", "2.")
-        article_match = re.match(r'^(\d+\.\s+)(.*)', line)
-        if article_match:
-            current_article = f"Artículo {article_match.group(1).strip()[:-1]}"  # Например, "Artículo 1"
-            article_text = article_match.group(2).strip()
-            chunks_with_metadata.append({
-                "title": current_title,
-                "article": current_article,
-                "text": article_text
-            })
-        else:
-            # Если это продолжение статьи, добавляем к последнему чанку
-            if chunks_with_metadata:
-                chunks_with_metadata[-1]["text"] += " " + line
-
-    return chunks_with_metadata
-
 # Читаем текст из файла
 with open("extracted_laws.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
-# Очищаем и извлекаем метаданные
-chunks_with_metadata = clean_text_with_metadata(text)
+# Исправляем основные структурные элементы
+def fix_main_structure(text):
+    # Исправляем TÍTULO PRELIMINAR
+    text = re.sub(r'TÍT[Uu\s\n]*LO\s+PRELIMINAR', 'TÍTULO PRELIMINAR', text)
+    
+    # Исправляем LIBRO с разными номерами
+    text = re.sub(r'LI[Bb\s\n]*RO\s+PRIMERO', 'LIBRO PRIMERO', text)
+    text = re.sub(r'LI[Bb\s\n]*RO\s+II', 'LIBRO II', text)
+    text = re.sub(r'LI[Bb\s\n]*RO\s+III', 'LIBRO III', text)
+    text = re.sub(r'LI[Bb\s\n]*RO\s+IV', 'LIBRO IV', text)
+    
+    # Исправляем TÍTULO (общий шаблон)
+    text = re.sub(r'TÍT[Uu\s\n]*LO', 'TÍTULO', text)
+    
+    # Исправляем CAPÍTULO (общий шаблон)
+    text = re.sub(r'CAPÍT[Uu\s\n]*LO', 'CAPÍTULO', text)
+    
+    return text
 
-# Создаём эмбеддинги только для текста
-model = SentenceTransformer('all-MiniLM-L6-v2')
-texts = [chunk["text"] for chunk in chunks_with_metadata]
-embeddings = model.encode(texts)
+# Исправляем переносы и пробелы в словах
+def fix_word_breaks(text):
+    # Убираем перенос с дефисом (например, "com- pleta" → "completa")
+    text = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', text)
+    
+    # Убираем лишние пробелы между частями слова (например, "costumbr e" → "costumbre")
+    text = re.sub(r'(\w{2,})\s+(\w{1,3})\b', r'\1\2', text)
+    
+    # Объединяем куски слов, разбитые переносом строки
+    text = re.sub(r'(\w{2,})\s*\n\s*(\w{1,3})\b', r'\1\2', text)
+    
+    return text
 
-# Сохраняем в FAISS
-dimension = embeddings.shape[1]
-index = faiss.IndexFlatL2(dimension)
-index.add(np.array(embeddings))
-faiss.write_index(index, 'laws_index.faiss')
+# Исправляем нумерацию статей
+def fix_article_numbering(text):
+    # Соединяем номера статей, разорванные разрывами строк
+    text = re.sub(r'(\d+)\.\s*\n\s*', r'\1. ', text)
+    
+    # Исправляем случаи, когда номер и текст разделены переносом строки
+    text = re.sub(r'(\d+\.\s*)\n(\w+)', r'\1 \2', text)
+    
+    return text
 
-# Сохраняем чанки с метаданными
-with open('laws_chunks.txt', 'w', encoding='utf-8') as f:
-    for chunk in chunks_with_metadata:
-        f.write(f"{chunk['title']}|{chunk['article']}|{chunk['text']}\n")
+# Нормализуем регистр для подзаголовков
+def normalize_subheader_case(text):
+    # Находим подзаголовки между CAPÍTULO и номерами статей и приводим их к верхнему регистру
+    def uppercase_headers(match):
+        return match.group(1) + match.group(2).upper() + match.group(3)
+    
+    # Шаблон: CAPÍTULO + любой текст + до первого номера статьи
+    text = re.sub(r'(CAPÍTULO [IVX]+\s*\n\s*)([a-zñáéíóúü\s]+)(\n\s*\d+\.)', 
+                  uppercase_headers, text, flags=re.IGNORECASE)
+    
+    return text
 
-print(f"Сохранено {len(chunks_with_metadata)} чанков в FAISS")
+def process_legal_text(text):
+    print("Начало обработки текста...")
+    
+    # Шаг 1: Исправляем основную структуру
+    text = fix_main_structure(text)
+    print("Структурные заголовки исправлены")
+    
+    # Шаг 2: Исправляем переносы и пробелы в словах
+    text = fix_word_breaks(text)
+    print("Переносы и пробелы в словах исправлены")
+    
+    # Шаг 3: Исправляем нумерацию статей
+    text = fix_article_numbering(text)
+    print("Нумерация статей исправлена")
+    
+    # Шаг 4: Нормализуем регистр для подзаголовков
+    text = normalize_subheader_case(text)
+    print("Регистр подзаголовков нормализован")
+    
+    # Шаг 5: Общая очистка
+    text = text.replace('\r', '')  # Удаляем возможные символы возврата каретки
+    text = re.sub(r'\n{3,}', '\n\n', text)  # Убираем избыточные пустые строки
+    print("Общая очистка завершена")
+    
+    return text
+
+processed_text = process_legal_text(text)
+with open("processed_laws.txt", "w", encoding="utf-8") as f:
+    f.write(processed_text)
+
+print("Обработка закончена. Результат сохранен в processed_laws.txt")
