@@ -9,9 +9,9 @@ def extract_text_with_pdfplumber(pdf_path):
             if i < 19:
                 continue
             # for page in pdf.pages:
-            text += page.extract_text().lower() + "\n"
+            text += page.extract_text() + "\n"
             print(text)
-            if i == 21:
+            if i == 20:
                 break
     return text
 
