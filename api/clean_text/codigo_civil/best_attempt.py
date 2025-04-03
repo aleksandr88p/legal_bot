@@ -410,7 +410,7 @@ def main():
     save_articles_to_json(articles_list, 'articles_for_embeddings.json')
     
     # Проверка коротких статей
-    check_short_articles(structure, min_length=30)
+    # check_short_articles(structure, min_length=30)
     
     print("\nОбработка завершена. Результаты готовы для создания эмбеддингов.")
 
