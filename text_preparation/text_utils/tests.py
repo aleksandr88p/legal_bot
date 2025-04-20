@@ -2,7 +2,7 @@ import json
 import re
 
 # Путь к файлу с результатом структуры
-structure_path = "structure_with_text.json"
+structure_path = "structure_with_text_penal.json"
 
 def extract_article_number(articulo):
     """Извлекает номер статьи как int (например, '115.' -> 115)"""

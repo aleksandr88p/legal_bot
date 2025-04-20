@@ -8,7 +8,7 @@ from text_extraction import extract_text_from_pdf
 
 # Пример: анализ одной страницы PDF
 pdf_path = '../../DATA/codigo_penal.pdf'
-page_num = 16
+page_num = 20
 
 # Получаем текст и стили
 blocks = extract_text_from_pdf(pdf_path, page_num)

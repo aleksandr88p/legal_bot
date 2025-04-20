@@ -3,8 +3,8 @@ import json
 import os
 import re
 
-pdf_path = '../../DATA/Codigo_Civil.pdf'
-output_path = 'structure_with_text.json'
+pdf_path = '../../DATA/codigo_penal.pdf'
+output_path = 'structure_with_text_penal.json'
 
 # Описания стилей для поиска
 STYLE_LIBRO = {"font": "AvenirLTStd-Roman", "size": 10.5}

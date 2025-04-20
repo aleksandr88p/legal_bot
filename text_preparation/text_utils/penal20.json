@@ -1,0 +1,434 @@
+[
+  {
+    "text": "23",
+    "font": "AvenirLTStd-Roman",
+    "size": 8.5,
+    "color": 0,
+    "bbox": [
+      180.94329833984375,
+      508.7745361328125,
+      190.39529418945312,
+      518.7875366210938
+    ]
+  },
+  {
+    "text": "Cuando la pena, por su extensión, pueda considerarse como ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      46.55500030517578,
+      322.9259033203125,
+      57.746002197265625
+    ]
+  },
+  {
+    "text": "leve y como menos grave, el delito se considerará, en todo ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      57.05500030517578,
+      322.9828796386719,
+      68.24600219726562
+    ]
+  },
+  {
+    "text": "caso, como leve.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      67.55500030517578,
+      139.17689514160156,
+      78.74600219726562
+    ]
+  },
+  {
+    "text": "Artículo 14 ",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      86.31961059570312,
+      102.34260559082031,
+      97.6151123046875
+    ]
+  },
+  {
+    "text": "1.\t El error invencible sobre un hecho constitutivo de la infrac­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      105.2933120727539,
+      320.31512451171875,
+      116.48431396484375
+    ]
+  },
+  {
+    "text": "ción penal excluye la responsabilidad criminal. Si el error, ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      115.7933120727539,
+      323.08740234375,
+      126.98431396484375
+    ]
+  },
+  {
+    "text": "atendidas las circunstancias del hecho y las personales del ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      126.2933120727539,
+      322.9686584472656,
+      137.48431396484375
+    ]
+  },
+  {
+    "text": "autor, fuera vencible, la infracción será castigada, en su ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      136.79331970214844,
+      322.76446533203125,
+      147.98431396484375
+    ]
+  },
+  {
+    "text": "caso, como imprudente.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      147.29331970214844,
+      171.55288696289062,
+      158.48431396484375
+    ]
+  },
+  {
+    "text": "2.\t El error sobre un hecho que cualifique la infracción o sobre ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      166.1625213623047,
+      322.91363525390625,
+      177.353515625
+    ]
+  },
+  {
+    "text": "una circunstancia agravante, impedirá su apreciación.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      176.6624298095703,
+      295.2619323730469,
+      187.85342407226562
+    ]
+  },
+  {
+    "text": "3.\t El error invencible sobre la ilicitud del hecho constitutivo de la ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      195.53163146972656,
+      322.98968505859375,
+      206.72262573242188
+    ]
+  },
+  {
+    "text": "infracción penal excluye la responsabilidad criminal. Si el error ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      206.03163146972656,
+      322.9354248046875,
+      217.22262573242188
+    ]
+  },
+  {
+    "text": "fuera vencible, se aplicará la pena inferior en uno o dos grados.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      216.53163146972656,
+      320.1424255371094,
+      227.72262573242188
+    ]
+  },
+  {
+    "text": "Artículo 15 ",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      235.29632568359375,
+      102.34260559082031,
+      246.59182739257812
+    ]
+  },
+  {
+    "text": "Son punibles el delito consumado y la tentativa de delito.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      254.26991271972656,
+      296.028564453125,
+      265.4609069824219
+    ]
+  },
+  {
+    "text": "Artículo 16 ",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      273.034912109375,
+      102.34260559082031,
+      284.3304138183594
+    ]
+  },
+  {
+    "text": "1.\t Hay tentativa cuando el sujeto da principio a la ejecución del ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      292.00860595703125,
+      322.8660888671875,
+      303.1996154785156
+    ]
+  },
+  {
+    "text": "delito directamente por hechos exteriores, practicando ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      302.5085144042969,
+      322.7453918457031,
+      313.69952392578125
+    ]
+  },
+  {
+    "text": "todos o parte de los actos que objetivamente deberían pro­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      313.0085144042969,
+      320.31512451171875,
+      324.19952392578125
+    ]
+  },
+  {
+    "text": "ducir el resultado, y sin embargo éste no se produce por ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      323.5085144042969,
+      322.9068603515625,
+      334.69952392578125
+    ]
+  },
+  {
+    "text": "causas independientes de la voluntad del autor.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      334.0085144042969,
+      272.0248718261719,
+      345.19952392578125
+    ]
+  },
+  {
+    "text": "2.\t Quedará exento de responsabilidad penal por el delito ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      352.8777160644531,
+      322.76531982421875,
+      364.0687255859375
+    ]
+  },
+  {
+    "text": "intentado quien evite voluntariamente la consumación del ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      363.3777160644531,
+      323.115966796875,
+      374.5687255859375
+    ]
+  },
+  {
+    "text": "delito, bien desistiendo de la ejecución ya iniciada, bien impi­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      373.8777160644531,
+      320.31512451171875,
+      385.0687255859375
+    ]
+  },
+  {
+    "text": "diendo la producción del resultado, sin perjuicio de la res­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      384.3777160644531,
+      320.31512451171875,
+      395.5687255859375
+    ]
+  },
+  {
+    "text": "ponsabilidad en que pudiera haber incurrido por los actos ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      394.8777160644531,
+      322.926025390625,
+      406.0687255859375
+    ]
+  },
+  {
+    "text": "ejecutados, si éstos fueren ya constitutivos de otro delito.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      405.3777160644531,
+      310.6044616699219,
+      416.5687255859375
+    ]
+  },
+  {
+    "text": "3.\t Cuando en un hecho intervengan varios sujetos, quedarán ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      51.02360153198242,
+      424.2469177246094,
+      322.9801025390625,
+      435.43792724609375
+    ]
+  },
+  {
+    "text": "exentos de responsabilidad penal aquél o aquéllos que ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      434.7469177246094,
+      323.0873718261719,
+      445.93792724609375
+    ]
+  },
+  {
+    "text": "desistan de la ejecución ya iniciada, e impidan o intenten ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      445.2469177246094,
+      323.0303955078125,
+      456.43792724609375
+    ]
+  },
+  {
+    "text": "impedir, seria, firme y decididamente, la consumación, sin ",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      455.7469177246094,
+      323.0589294433594,
+      466.93792724609375
+    ]
+  },
+  {
+    "text": "perjuicio de la responsabilidad en que pudieran haber incu­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      466.2469177246094,
+      320.31512451171875,
+      477.43792724609375
+    ]
+  },
+  {
+    "text": "rrido por los actos ejecutados, si éstos fueren ya constituti­",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      476.7469177246094,
+      320.31512451171875,
+      487.93792724609375
+    ]
+  },
+  {
+    "text": "vos de otro delito.",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 0,
+    "bbox": [
+      68.03140258789062,
+      487.2469177246094,
+      146.5583953857422,
+      498.43792724609375
+    ]
+  }
+]

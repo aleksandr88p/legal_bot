@@ -1,7 +1,7 @@
 import json
 
-input_path = "structure_with_text.json"
-output_path = "codigo_civil.ndjson"
+input_path = "structure_with_text_penal.json"
+output_path = "codigo_penal.ndjson"
 
 with open(input_path, "r", encoding="utf-8") as f:
     articles = json.load(f)
