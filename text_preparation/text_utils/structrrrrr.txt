@@ -1,0 +1,174 @@
+
+libro
+
+  {
+    "text": "LIBRO PRIMERO",
+    "font": "AvenirLTStd-Roman",
+    "size": 10.5,
+    "color": 2301728,
+    "bbox": [
+      160.35240173339844,
+      196.2386016845703,
+      239.33340454101562,
+      208.60760498046875
+    ]
+
+
+
+
+titulo
+
+  },
+  {
+    "text": "TÍTULO PRIMERO",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.5,
+    "color": 2301728,
+    "bbox": [
+      154.1717987060547,
+      235.614013671875,
+      245.5142822265625,
+      246.90951538085938
+    ]
+  },
+
+capitulo
+
+  {
+    "text": "CAPÍTULO PRIMERO",
+    "font": "AvenirLTStd-Roman",
+    "size": 9.5,
+    "color": 2301728,
+    "bbox": [
+      154.43234252929688,
+      236.13401794433594,
+      245.25230407714844,
+      247.32504272460938
+    ]
+  },
+
+
+
+  articulo норм
+
+    {
+    "text": "17. ",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.5,
+    "color": 2301728,
+    "bbox": [
+      65.20429992675781,
+      268.0090026855469,
+      82.0762939453125,
+      279.3045349121094
+    ]
+  },
+
+
+articulo иногда
+
+  {
+    "text": "154. ",
+    "font": "AvenirLTStd-Heavy",
+    "size": 9.734603881835938,
+    "color": 2301728,
+    "bbox": [
+      65.1968002319336,
+      310.2088928222656,
+      88.97709655761719,
+      321.50439453125
+    ]
+  },
+
+
+  {"book_name": "codigo civil", "libro": null, "titulo": "TÍTULO PRELIMINAR", "capitulo": "CAPÍTULO PRIMERO", "articulo": "1.", "texto": "later"}
+
+
+
+После статьи 71 сразу идет 73 (пропущено 1) в LIBRO: LIBRO PRIMERO, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO VI
+После статьи 153 сразу идет 184 (пропущено 30) в LIBRO: LIBRO PRIMERO, TITULO: TÍTULO VIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 184 сразу идет 334 (пропущено 149) в LIBRO: LIBRO II, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO primero
+После статьи 334 сразу идет 336 (пропущено 1) в LIBRO: LIBRO II, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 338 сразу идет 687 (пропущено 348) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO PRIMERO
+После статьи 687 сразу идет 789 (пропущено 101) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO II
+После статьи 789 сразу идет 898 (пропущено 108) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO II
+После статьи 898 сразу идет 902 (пропущено 3) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO II
+После статьи 902 сразу идет 931 (пропущено 28) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO IV
+После статьи 931 сразу идет 939 (пропущено 7) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO IV
+После статьи 939 сразу идет 971 (пропущено 31) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO V
+После статьи 971 сразу идет 1087 (пропущено 115) в LIBRO: LIBRO III, TITULO: TÍTULO III, CAPITULO: CAPÍTULO VI
+После статьи 1093 сразу идет 1096 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1096 сразу идет 1098 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1098 сразу идет 1100 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1100 сразу идет 1104 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1104 сразу идет 1107 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1110 сразу идет 1112 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO II
+После статьи 1113 сразу идет 1116 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1116 сразу идет 1119 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1121 сразу идет 1123 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1125 сразу идет 1130 (пропущено 4) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1132 сразу идет 1135 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1137 сразу идет 1141 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1145 сразу идет 1147 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1149 сразу идет 1151 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1152 сразу идет 1155 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO III
+После статьи 1156 сразу идет 1158 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1158 сразу идет 1162 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1164 сразу идет 1166 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1171 сразу идет 1174 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1178 сразу идет 1180 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1181 сразу идет 1186 (пропущено 4) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1188 сразу идет 1191 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1192 сразу идет 1194 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1198 сразу идет 1200 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1203 сразу идет 1209 (пропущено 5) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO IV
+После статьи 1221 сразу идет 1224 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO PRIMERO, CAPITULO: CAPÍTULO V
+После статьи 1253 сразу идет 1260 (пропущено 6) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1260 сразу идет 1262 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO II
+После статьи 1262 сразу идет 1266 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO II
+После статьи 1267 сразу идет 1271 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO II
+После статьи 1271 сразу идет 1292 (пропущено 20) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO V
+После статьи 1295 сразу идет 1306 (пропущено 10) в LIBRO: LIBRO IV, TITULO: TÍTULO II, CAPITULO: CAPÍTULO VI
+После статьи 1306 сразу идет 1341 (пропущено 34) в LIBRO: LIBRO IV, TITULO: TÍTULO III, CAPITULO: CAPÍTULO III
+После статьи 1341 сразу идет 1410 (пропущено 68) в LIBRO: LIBRO IV, TITULO: TÍTULO III, CAPITULO: CAPÍTULO IV
+После статьи 1410 сразу идет 1413 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO III, CAPITULO: CAPÍTULO V
+После статьи 1413 сразу идет 1486 (пропущено 72) в LIBRO: LIBRO IV, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO IV
+После статьи 1486 сразу идет 1502 (пропущено 15) в LIBRO: LIBRO IV, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO V
+После статьи 1502 сразу идет 1504 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO V
+После статьи 1517 сразу идет 1519 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO VI
+После статьи 1519 сразу идет 1524 (пропущено 4) в LIBRO: LIBRO IV, TITULO: TÍTULO IV, CAPITULO: CAPÍTULO VI
+После статьи 1536 сразу идет 1538 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO V, CAPITULO: None
+После статьи 1553 сразу идет 1555 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO VI, CAPITULO: CAPÍTULO II
+После статьи 1647 сразу идет 1649 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO VII, CAPITULO: CAPÍTULO II
+После статьи 1696 сразу идет 1698 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO VIII, CAPITULO: CAPÍTULO II
+После статьи 1699 сразу идет 1701 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO VIII, CAPITULO: CAPÍTULO III
+После статьи 1708 сразу идет 1710 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO IX, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1719 сразу идет 1722 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO IX, CAPITULO: CAPÍTULO II
+После статьи 1731 сразу идет 1733 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO IX, CAPITULO: CAPÍTULO IV
+После статьи 1808 сразу идет 1810 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1811 сразу идет 1815 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO XIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1815 сразу идет 1817 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1819 сразу идет 1822 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO XIV, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1824 сразу идет 1826 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XIV, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1829 сразу идет 1832 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO XIV, CAPITULO: CAPÍTULO II
+После статьи 1856 сразу идет 1858 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XV, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1860 сразу идет 1862 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XV, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1877 сразу идет 1880 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO XV, CAPITULO: CAPÍTULO III
+После статьи 1880 сразу идет 1882 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XV, CAPITULO: CAPÍTULO IV
+После статьи 1884 сразу идет 1886 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XV, CAPITULO: CAPÍTULO IV
+После статьи 1887 сразу идет 1889 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1890 сразу идет 1893 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1894 сразу идет 1896 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1896 сразу идет 1901 (пропущено 4) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1901 сразу идет 1903 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO II
+После статьи 1904 сразу идет 1910 (пропущено 5) в LIBRO: LIBRO IV, TITULO: TÍTULO XVI, CAPITULO: CAPÍTULO II
+После статьи 1910 сразу идет 1912 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1921 сразу идет 1925 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO XVII, CAPITULO: CAPÍTULO II
+После статьи 1928 сразу идет 1930 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1930 сразу идет 1932 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1932 сразу идет 1935 (пропущено 2) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1935 сразу идет 1939 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO PRIMERO
+После статьи 1958 сразу идет 1962 (пропущено 3) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO III
+После статьи 1963 сразу идет 1970 (пропущено 6) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO III
+После статьи 1970 сразу идет 1972 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO III
+После статьи 1972 сразу идет 1974 (пропущено 1) в LIBRO: LIBRO IV, TITULO: TÍTULO XVIII, CAPITULO: CAPÍTULO III
